@@ -1,13 +1,13 @@
 public class Item {
     private String nameOfItem;
-    private Double price;
+    private double price;
     private String type;
     private String expiration;
 
     public Item() {
     }
 
-    public Item(String nameOfItem, Double price, String type, String expiration) {
+    public Item(String nameOfItem, double price, String type, String expiration) {
         this.nameOfItem = nameOfItem;
         this.price = price;
         this.type = type;
@@ -22,11 +22,11 @@ public class Item {
         this.nameOfItem = nameOfItem;
     }
 
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
