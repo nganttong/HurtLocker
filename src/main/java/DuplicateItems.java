@@ -9,6 +9,12 @@ public class DuplicateItems {
         this.prices = prices;
     }
 
+    public DuplicateItems(String name) {
+        this.name = name;
+        count = 1;
+        prices = new Prices();
+    }
+
     public String getName() {
         return name;
     }
