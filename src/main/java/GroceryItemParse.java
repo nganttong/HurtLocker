@@ -43,8 +43,8 @@ public class GroceryItemParse {
     public static String allValues(String rawItem) {
         StringBuilder sb = new StringBuilder();
         List<String> pairs = findKVPInRawData(rawItem);
-        for (String s: pairs ) {
-            sb.append((sb.toString().equals("")) ? returnValue(s) : "," + returnValue(s));
+        for (String string: pairs ) {
+            sb.append((sb.toString().equals("")) ? returnValue(string) : "," + returnValue(string));
         }
         return sb.toString();
     }
