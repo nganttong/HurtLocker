@@ -21,5 +21,21 @@ public class TypoFixer {
         }
     }
 
+    public static String converter (String stringToConvert) {
+        StringBuilder sb = new StringBuilder();
 
+        for (int i = 0; i < stringToConvert.length(); i++) {
+            sb.append(convertFromNumToLetter(stringToConvert.charAt(i)));
+        }
+        return sb.toString();
+    }
+
+    public static String makeSameCase (String string) {
+        StringBuilder sameCaseString = new StringBuilder();
+        for (int i = 0; i < string.length(); i++) {
+            char c = string.charAt(i);
+            sameCaseString.setCharAt(i, c >= 'A' && c <= 'Z' ? (char) (c + 'a' - 'A') : c);
+        }
+        return sameCaseString.toString();
+    }
 }
