@@ -16,6 +16,14 @@ public class Prices {
 
     //some dont have prices????
     //see all prices
+    public HashMap<Double, Integer> getAllPrices() {
+        return prices;
+    }
     //see how many have prices?
     //milk is pretty cheap...
+
+    //get how many times a price has appeared
+    public Integer getPriceCount(double price) {
+        return prices.get(price);
+    }
 }
