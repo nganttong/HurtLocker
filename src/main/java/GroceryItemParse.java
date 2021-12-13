@@ -1,3 +1,6 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -6,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class GroceryItemParse {
 
-    public static boolean hasSymbol (String string) {
+    public static boolean hasSymbol(String string) {
         Pattern pattern = Pattern.compile("(:;)|(:%)|(:\\*)|(:@)|(:!)");
         Matcher matcher = pattern.matcher(string);
         return matcher.find();
@@ -49,5 +52,13 @@ public class GroceryItemParse {
         return sb.toString();
     }
 
+    public static void printToFile(String fileName, String rawItem) throws FileNotFoundException, GroceryItemException {
+        Output output = new Output(rawDataToArray(rawItem));
+        PrintStream file = new PrintStream(new File(fileName));
+        PrintStream console = System.out;
+
+        System.setOut(file);
+        System.out.println(output.outputString());
+    }
 
 }

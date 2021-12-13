@@ -12,9 +12,7 @@ public class Main {
     public static void main(String[] args) throws Exception{
         String output = (new Main()).readRawDataToString();
         System.out.println(output);
-
+        GroceryItemParse.printToFile("output.txt", output);
     }
-
-
 
 }

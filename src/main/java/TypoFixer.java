@@ -1,7 +1,4 @@
 public class TypoFixer {
-    //a way to convert/change numbers to letter
-    //does capitalization matter?
-    //does first litter of words like milk, cookies, apples need to be capital?
 
     public static Character convertFromNumToLetter(Character numberToLetter) {
         if (numberToLetter.equals('0')) {
@@ -39,11 +36,8 @@ public class TypoFixer {
         return sameCaseString.toString();
     }
 
-
     public static String convertAndSameCase (String string) {
         return makeSameCase(converter(string));
     }
 
-    //do i need more?
-    //formatting for the end :D
 }
