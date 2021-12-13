@@ -45,4 +45,12 @@ public class Item {
     public void setExpiration(String expiration) {
         this.expiration = expiration;
     }
+
+    @Override
+    public String toString() {
+        return "nameOfItem:" + nameOfItem +
+                ", price:" + price +
+                ", type:'" + type +
+                ", expiration:'" + expiration;
+    }
 }
