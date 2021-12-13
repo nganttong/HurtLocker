@@ -1,13 +1,13 @@
-public class Item {
+public class GroceryItem {
     private String nameOfItem;
     private double price;
     private String type;
     private String expiration;
 
-    public Item() {
+    public GroceryItem() {
     }
 
-    public Item(String nameOfItem, double price, String type, String expiration) {
+    public GroceryItem(String nameOfItem, double price, String type, String expiration) {
         this.nameOfItem = nameOfItem;
         this.price = price;
         this.type = type;
