@@ -38,4 +38,11 @@ public class TypoFixer {
         }
         return sameCaseString.toString();
     }
+
+    public static String convertAndSameCase (String string) {
+        return makeSameCase(converter(string));
+    }
+
+    //do i need more?
+    //formatting for the end :D
 }
